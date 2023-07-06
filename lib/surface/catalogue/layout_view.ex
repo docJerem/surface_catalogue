@@ -26,6 +26,8 @@ defmodule Surface.Catalogue.LayoutView do
         <link phx-track-static rel="stylesheet" href={assets_file("app.css")}>
         {Phoenix.HTML.raw("<style>" <> render("makeup.css", %{}) <> "</style>")}
         <script defer phx-track-static type="text/javascript" src={assets_file("app.js")} />
+        <script src="https://cdn.tailwindcss.com"></script>
+        <script type="module"> import heroicons from https://cdn.jsdelivr.net/npm/heroicons@2.0.18/+esm </script>
       </head>
       <body>
         <section class="hero is-info">
